@@ -1,0 +1,228 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	/*box-sizing: border-box;*/
+}
+html{
+	font-size: 62.5%;
+}
+body{
+	font-size: 2rem;
+	overflow-x: hidden;
+	color: #fff;
+	font-family: 'Flamenco', cursive;
+}
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../IMAGES/back1.jpg');
+	background-size: cover;
+	background-repeat: no-repeat; 
+	background-position: center; 
+	height: 100vh;
+}
+.clearfix:after{
+	content: ".";
+	visibility: hidden;
+	display: block;
+	height: 0rem;
+	clear: both;
+}
+.row{
+	max-width: 118rem;
+	margin: 0 auto;
+}
+.logo{
+	height: 12rem;
+	width: auto;
+	float: left;
+	margin-top: 2rem;
+}
+.main-nav{
+	float: right;
+	margin-top: 6rem;
+}
+.main-nav li{
+	display: inline-block;
+	list-style: none;
+	margin-left: 4rem;
+}
+.main-nav li a{
+	padding: .5rem 0;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 90%;
+	font-weight: 100;
+}
+.main-nav li a:hover{
+	border-bottom: .2rem solid #008000;
+}
+.dropdown{
+	display: none;
+	position: absolute;
+}
+ul li:hover ul.dropdown{
+	display: grid;
+	margin-left: -3.5rem;
+	margin-top: 1rem;
+}
+.main-content-header{
+	width: 118rem;
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+h1{
+	color: #fff;
+	font-size: 240%;
+	word-spacing: .5rem;
+	letter-spacing: .3rem;
+	margin-bottom: 2rem;
+	text-transform: uppercase;
+	font-weight: lighter;
+}
+.btn{
+	display: inline-block;
+	padding: 1rem 3rem;
+	font-weight: lighter;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 20rem;
+	transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+.btn-full{
+	background-color: transparent;
+	color: #fff;
+	margin-right: 1.5rem;
+	border: .1rem solid #fff;
+}
+.btn-full:hover{
+	background-color: #008000;
+	box-shadow: inset 0 0 2rem  1rem rgba(0,0,0,0.5),
+	                  0 0 1rem .5rem #008000;
+	transition: all 1.0s ease;
+}
+.colorchange{
+	font-size: 6rem;
+	animation: colorchange 3s infinite;
+}
+@keyframes colorchange{
+	0%{color: #FFC0CB; }
+	25%{color: #0000FF; }
+	50%{color: #FFA500; }
+	100%{color: #FF1493; }
+}
+.mobile-icon{
+	display: none;
+}
+@media only screen and (max-width: 1180px){
+	.main-content-header{
+		width: 100%;
+		padding: 0 2%;
+	}
+}
+@media only screen and (max-width: 998px){
+	h1{font-size: 180%;}
+}
+@media only screen and (max-width: 768px){
+	h1{font-size: 150%;}
+	.main-nav{display: none;}
+	.mobile-icon{
+		display: inline-block;
+		color: #fff;
+		float: right;
+		margin-top: 3rem;
+		margin-left: 2rem;
+	}
+	.main-nav{float: left;}
+	.main-nav li{
+		display: block;
+		margin-top: 1rem; 
+	}
+}
+@media only screen and (max-width: 480px){
+	.btn-full{margin-bottom: 2rem;}
+	h1{font-size: 160%;}
+}
+/*social media*/
+.share{
+	position: absolute;
+	top: 83%;
+	left: 75%;
+	transform: translate(-50%,-50%);
+}
+.wrapper{
+	position: absolute;
+	top: 90%;
+	left: 75%;
+	transform: translate(-50%,-50%);
+}
+.wrapper ul{
+	list-style: none;
+}
+.wrapper ul li{
+	width: 4.5rem;
+	height: 4.5rem;
+	line-height: 5rem;
+	margin: 0 1rem;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 50%;
+	border: .2rem solid #fff;
+	float: left;
+}
+.wrapper ul li .fa{
+	color: #fff;
+	margin-top: 1rem;
+}
+.wrapper ul li:hover:nth-child(1){
+	border: .5rem solid #3b5998;
+	box-shadow: 0 0 1.5rem #3b5998;
+	transition: all 0.5s ease;
+}
+.wrapper ul li:hover .fa-facebook{
+	color: #3b5998;
+	text-shadow: 0 0 1.5rem #3b5998;
+	transition: all 0.5s ease;
+}
+.wrapper ul li:hover:nth-child(2){
+	border: .5rem solid #00aced;
+	box-shadow: 0 0 1.5rem #00aced;
+	transition: all 0.5s ease;
+}
+.wrapper ul li:hover .fa-twitter{
+	color: #00aced;
+	text-shadow: 0 0 1.5rem #00aced;
+	transition: all 0.5s ease;
+}
+.wrapper ul li:hover:nth-child(3){
+	border: .5rem solid #bc2a8d;
+	box-shadow: 0 0 1.5rem #bc2a8d;
+	transition: all 0.5s ease;
+}
+.wrapper ul li:hover .fa-instagram{
+	color: #bc2a8d;
+	text-shadow: 0 0 1.5rem #bc2a8d;
+	transition: all 0.5s ease;
+}
+.wrapper ul li:hover:nth-child(4){
+	border: .5rem solid #bb0000;
+	box-shadow: 0 0 1.5rem #bb0000;
+	transition: all 0.5s ease;
+}
+.wrapper ul li:hover .fa-youtube-play{
+	color: #bb0000;
+	text-shadow: 0 0 1.5rem #bb0000;
+	transition: all 0.5s ease;
+}
+.wrapper ul li:hover:nth-child(5){
+	border: .5rem solid #4dc247;
+	box-shadow: 0 0 1.5rem #4dc247;
+	transition: all 0.5s ease;
+}
+.wrapper ul li:hover .fa-whatsapp{
+	color: #4dc247;
+	text-shadow: 0 0 1.5rem #4dc247;
+	transition: all 0.5s ease;
+}
+

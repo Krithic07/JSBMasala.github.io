@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JSP Masala</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="row clearfix">
+				<img src="IMAGES/logo.png" class="logo">
+				<ul class="main-nav animated slideInDown" id="check-class">
+					<li><a href="showme-more.html">Products</a></li>
+					<li><a href="#">CATEGORIES</a>
+						<ul class="dropdown">
+							<li><a href="#">VEG</a></li>
+							<li><a href="#">NON - VEG</a></li>
+						</ul>
+					</li>
+					<li><a href="#">WISHLIST</a></li>
+					<li><a href="#">Support</a></li>
+					<li><a href="sign-up.html">SIGH UP</a></li>
+				</ul>
+				<a href="#" class="mobile-icon" onclick="slideshow()"><i class="fa fa-bars"></i></a>
+			</div>
+		</nav>
+		<div class="main-content-header">
+		<h1>WELCOME TO <span class="colorchange">JSB MASALA</span><br>
+		    TASTE OF HAPPINESS & HEALTH</h1>
+		<a href="showme-more.html" class="btn btn-full">SHOW ME MORE</a>
+		<a href="log-in.html" class="btn btn-full">LOGIN</a>  
+		</div>  
+		<!--<div class="wrapper">
+		<ul>
+			<li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+			<li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+			<li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+			<li><i class="fa fa-youtube-play" aria-hidden="true"></i></li>
+			<li><i class="fa fa-whatsapp" aria-hidden="true"></i></li>
+		</ul>
+		</div>
+		<h5 class="share">SHARE WITH YOUR FRIENDS</h5>-->
+	</header>
+	<script type="text/javascript">
+		function slideshow(){
+			var x = document.getElementById('check-class');
+			if(x.style.display === "none"){
+				x.style.display="block";
+			}else{
+				x.style.display="none";
+			}
+		}
+	</script>
+</body>
+</html>
